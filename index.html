@@ -1,139 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mithun Patra | Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f5f7fa;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 20px 40px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.1em;
-    }
-    main {
-      padding: 20px 40px;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-    }
-    h2 {
-      border-bottom: 2px solid #2c3e50;
-      padding-bottom: 5px;
-      margin-top: 30px;
-      color: #2c3e50;
-    }
-    .section {
-      margin-bottom: 20px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li::before {
-      content: "• ";
-      color: #2c3e50;
-    }
-    .contact a {
-      color: #2c3e50;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #2c3e50;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mithun Patra | Exoplanet Atmospheres</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg-dark:#0b0f1a;
+  --card:#12182b;
+  --accent:#4fc3f7;
+  --accent2:#9b5de5;
+  --text:#eaeaea;
+  --muted:#b0b8d6;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:Roboto, sans-serif;
+  background: radial-gradient(circle at top, #1a2340, #05070f);
+  color:var(--text);
+  line-height:1.7;
+}
+
+header{
+  text-align:center;
+  padding:60px 20px;
+  background:linear-gradient(180deg,#0b1025,#05070f);
+}
+
+header h1{
+  font-family:Orbitron, sans-serif;
+  font-size:2.6em;
+  margin-bottom:5px;
+  color:#ffffff;
+}
+
+header p{
+  color:var(--muted);
+  margin:4px 0;
+}
+
+nav{
+  margin-top:20px;
+}
+
+nav a{
+  margin:0 15px;
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:#ffffff;
+}
+
+main{
+  max-width:1000px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+section{
+  background:var(--card);
+  padding:30px;
+  border-radius:14px;
+  margin-bottom:30px;
+  box-shadow:0 0 25px rgba(79,195,247,0.08);
+}
+
+h2{
+  font-family:Orbitron, sans-serif;
+  color:var(--accent);
+  border-bottom:1px solid rgba(79,195,247,0.3);
+  padding-bottom:8px;
+}
+
+ul{
+  padding-left:20px;
+}
+
+li{
+  margin-bottom:8px;
+}
+
+.highlight{
+  color:var(--accent2);
+  font-weight:500;
+}
+
+a{
+  color:var(--accent);
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  color:var(--muted);
+  font-size:0.9em;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Mithun Patra</h1>
-    <p>Astronomer | Researcher | Educator</p>
-    <p class="contact">
-      📧 <a href="mailto:your-email@example.com">mithunp092@gmail.com</a> |
-      🌐 <a href="https://sites.google.com/niser.ac.in/mithun-patra/about" target="_blank">Website</a> |
-    
-      ▶️ <a href="https://www.youtube.com/@MITHUNPATRAQPhysicsAcademy" target="_blank">YouTube</a>
-    </p>
-  </header>
 
-  <main>
-    <section class="section">
-      <h2>About Me</h2>
-      <p>
-        I am a passionate astronomer and physics researcher with expertise in astrophysics, atmospheric science, and teaching.
-        Founder of <b>Q-Physics Academy</b>, I am dedicated to advancing science education and contributing to research
-        in planetary and exoplanetary science.
-      </p>
-    </section>
+<header>
+  <h1>Mithun Patra</h1>
+  <p>PhD Student — Exoplanet Atmospheres</p>
+  <p>School of Earth & Planetary Sciences, NISER, India</p>
 
-    <section class="section">
-      <h2>Education</h2>
-      <ul>
-        <li>M.Sc. Physics — Banaras Hindu University (2018–2020)</li>
-        <li>B.Sc. Physics — [Add University Name, if available]</li>
-        <li>Current Research Scholar — NISER Bhubaneswar</li>
-      </ul>
-    </section>
+  <nav>
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#academy">Q-Physics Academy</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <section class="section">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Exoplanet atmospheres and characterization</li>
-        <li>Reflected light spectroscopy</li>
-        <li>Radiative transfer modeling</li>
-        <li>Planetary clouds, aerosols, and albedo studies</li>
-      </ul>
-    </section>
+<main>
 
-    <section class="section">
-      <h2>Experience</h2>
-      <ul>
-        <li><b>Founder</b>, Q-Physics Academy — Created educational resources, lectures, and tutorials for physics students.</li>
-        <li><b>Research Scholar</b>, NISER Bhubaneswar — Working on exoplanet atmospheric modeling and spectroscopy.</li>
-        <li><b>Content Creator</b> — Developed online lectures and study materials for physics education.</li>
-      </ul>
-    </section>
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am a <span class="highlight">doctoral researcher in exoplanet atmospheric science</span> working on
+    reflected-light spectroscopy, atmospheric retrievals, and cloud microphysics.
+    My research focuses on interpreting observations from current and future missions such as
+    <b>JWST</b> and the <b>Habitable Worlds Observatory (HWO)</b>.
+  </p>
+</section>
 
-    <section class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Data Analysis (Python, NumPy, Matplotlib, JWST pipeline)</li>
-        <li>Exoplanetary Atmosphere Modeling</li>
-        <li>Teaching & Public Outreach</li>
-        <li>Scientific Writing & Presentation</li>
-      </ul>
-    </section>
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><b>PhD in Physics (Exoplanet Atmospheres)</b>, 2024–Present  
+        <br>National Institute of Science Education and Research (NISER), India</li>
+    <li><b>M.Sc. in Physics (Space & Atmospheric Physics)</b>, 2020  
+        <br>Banaras Hindu University (BHU), India</li>
+    <li><b>B.Sc. in Physics</b>, 2017  
+        <br>Vidyasagar University, Garhbeta College</li>
+  </ul>
+</section>
 
-    <section class="section">
-      <h2>Achievements</h2>
-      <ul>
-        <li>Founder of Q-Physics Academy YouTube channel with educational content in physics and astronomy.</li>
-        <li>Active in research projects on exoplanet atmospheric characterization for missions like Habitable Worlds Observatory (HWO).</li>
-      </ul>
-    </section>
-  </main>
+<section id="research">
+  <h2>Research Interests</h2>
+  <ul>
+    <li>Exoplanet atmospheres & reflected-light spectroscopy</li>
+    <li>Direct imaging of Earth-like exoplanets</li>
+    <li>Atmospheric retrievals & Bayesian inference</li>
+    <li>Cloud and haze microphysics</li>
+    <li>High- and low-resolution spectral diagnostics</li>
+  </ul>
+</section>
 
-  <footer>
-    &copy; 2025 Mithun Patra | Resume
-  </footer>
+<section>
+  <h2>Technical Skills</h2>
+  <ul>
+    <li>Programming: Python, MATLAB, HTML</li>
+    <li>Radiative transfer & atmospheric modeling</li>
+    <li>Bayesian retrievals (PyMultiNest)</li>
+    <li>Machine learning (Scikit-learn)</li>
+    <li>Scientific writing (LaTeX, ApJ style)</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Publications & Preprints</h2>
+  <ul>
+    <li>
+      <b>Deka et al. (2025)</b> — <i>NEXOTRANS: A Next-Generation Exoplanet Atmospheric Retrieval Framework</i>,  
+      Atmospheric characterization of WASP-69b using JWST NIRCam & MIRI  
+      <br><span class="highlight">Status:</span> Under Review
+    </li>
+  </ul>
+</section>
+
+<section id="academy">
+  <h2>Q-Physics Academy</h2>
+  <p>
+    Founder of <b>Q-Physics Academy</b>, an educational platform focused on physics, astronomy,
+    and competitive exam preparation (CSIR-NET, GATE, IIT-JAM).
+  </p>
+  <p>
+    ▶️ YouTube:  
+    <a href="https://www.youtube.com/@MITHUNPATRAQPhysicsAcademy" target="_blank">
+      Q-Physics Academy Channel
+    </a>
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    📧 Email: <a href="mailto:mithunp092@gmail.com">mithunp092@gmail.com</a><br>
+    🌐 Website: <a href="https://sites.google.com/niser.ac.in/mithun-patra/about" target="_blank">Google Site</a><br>
+    🔗 ORCID: 0009-0002-4941-5218
+  </p>
+</section>
+
+</main>
+
+<footer>
+  © 2025 Mithun Patra | Exoplanet Atmospheres
+</footer>
+
 </body>
 </html>
