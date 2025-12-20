@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mithun Patra | Exoplanet Atmospheres</title>
 
-<!-- Google Font -->
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
@@ -19,6 +19,7 @@
 }
 
 *{box-sizing:border-box;}
+
 body{
   margin:0;
   font-family:Roboto, sans-serif;
@@ -27,6 +28,7 @@ body{
   line-height:1.7;
 }
 
+/* ---------- HEADER ---------- */
 header{
   text-align:center;
   padding:60px 20px;
@@ -60,6 +62,7 @@ nav a:hover{
   color:#ffffff;
 }
 
+/* ---------- MAIN ---------- */
 main{
   max-width:1000px;
   margin:auto;
@@ -89,8 +92,20 @@ li{
   margin-bottom:8px;
 }
 
-.highlight{
-  color:var(--accent2);
+/* ---------- TEXT HIGHLIGHTS ---------- */
+.emph{
+  color:#4fc3f7;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  font-weight:500;
+}
+
+.emph2{
+  color:#9b5de5;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
   font-weight:500;
 }
 
@@ -98,6 +113,7 @@ a{
   color:var(--accent);
 }
 
+/* ---------- FOOTER ---------- */
 footer{
   text-align:center;
   padding:20px;
@@ -127,23 +143,53 @@ footer{
 
 <section>
   <h2>About Me</h2>
+
   <p>
-    I am a <span class="highlight">doctoral researcher in exoplanet atmospheric science</span> working on
-    reflected-light spectroscopy, atmospheric retrievals, and cloud microphysics.
-    My research focuses on interpreting observations from current and future missions such as
-    <b>JWST</b> and the <b>Habitable Worlds Observatory (HWO)</b>.
+    I am a <span class="emph">doctoral researcher in exoplanet atmospheric science</span> at the
+    School of Earth and Planetary Sciences, NISER, India. My research lies at the intersection of
+    <span class="emph2">astrophysics</span>, <span class="emph2">atmospheric physics</span>, and
+    <span class="emph2">data-driven modeling</span>, with a strong focus on the
+    <span class="emph">characterization of exoplanet atmospheres</span> using both reflected-light
+    and thermal emission observations.
+  </p>
+
+  <p>
+    My primary scientific interests include
+    <span class="emph">reflected-light spectroscopy</span>,
+    <span class="emph">direct imaging of Earth-like exoplanets</span>, and the development of
+    <span class="emph">physically consistent atmospheric retrieval frameworks</span>.
+    I work on forward modeling of planetary spectra incorporating
+    <span class="emph2">radiative transfer</span>,
+    <span class="emph2">cloud and haze microphysics</span>, and
+    <span class="emph2">surface reflectance</span>.
+  </p>
+
+  <p>
+    A significant component of my work involves
+    <span class="emph">Bayesian atmospheric retrievals</span> and
+    <span class="emph">statistical inference</span>.
+    My research is motivated by observations from
+    <span class="emph">JWST</span> and future missions such as the
+    <span class="emph">Habitable Worlds Observatory (HWO)</span> and
+    <span class="emph">LIFE</span>, particularly for
+    <span class="emph">biosignature detectability</span> and
+    <span class="emph">habitability assessment</span>.
+  </p>
+
+  <p>
+    Alongside research, I am committed to
+    <span class="emph">science education and outreach</span>.
+    I am the founder of <span class="emph">Q-Physics Academy</span>, mentoring students and
+    developing advanced physics and astronomy content.
   </p>
 </section>
 
 <section id="education">
   <h2>Education</h2>
   <ul>
-    <li><b>PhD in Physics (Exoplanet Atmospheres)</b>, 2024–Present  
-        <br>National Institute of Science Education and Research (NISER), India</li>
-    <li><b>M.Sc. in Physics (Space & Atmospheric Physics)</b>, 2020  
-        <br>Banaras Hindu University (BHU), India</li>
-    <li><b>B.Sc. in Physics</b>, 2017  
-        <br>Vidyasagar University, Garhbeta College</li>
+    <li><b>PhD in Physics (Exoplanet Atmospheres)</b>, 2024–Present<br>NISER, India</li>
+    <li><b>M.Sc. Physics (Space & Atmospheric Physics)</b>, 2020<br>BHU, India</li>
+    <li><b>B.Sc. Physics</b>, 2017<br>Vidyasagar University</li>
   </ul>
 </section>
 
@@ -154,18 +200,7 @@ footer{
     <li>Direct imaging of Earth-like exoplanets</li>
     <li>Atmospheric retrievals & Bayesian inference</li>
     <li>Cloud and haze microphysics</li>
-    <li>High- and low-resolution spectral diagnostics</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Technical Skills</h2>
-  <ul>
-    <li>Programming: Python, MATLAB, HTML</li>
-    <li>Radiative transfer & atmospheric modeling</li>
-    <li>Bayesian retrievals (PyMultiNest)</li>
-    <li>Machine learning (Scikit-learn)</li>
-    <li>Scientific writing (LaTeX, ApJ style)</li>
+    <li>Spectral diagnostics</li>
   </ul>
 </section>
 
@@ -173,13 +208,12 @@ footer{
   <h2>Publications & Preprints</h2>
   <ul>
     <li>
-      Deka, T., Majumdar, L., Basra Khan, T., Dewan, S., Ghosh, P., Das, D., 
-      <b>Patra, M.</b> (2025). 
-      <i>NEXOTRANS: A Next-Generation Exoplanet Atmospheric Retrieval Framework 
-      for Emission Spectroscopy — Atmospheric Characterization of WASP-69b 
-      Using JWST NIRCam and MIRI Observations.</i>
-      <br>
-      <span class="highlight">Status:</span> Submitted to ApJ; <a href="https://arxiv.org/html/2510.27223v1" target="_blank">arXiv:2506.12345</a>
+      Deka, T., Majumdar, L., Basra Khan, T., Dewan, S., Ghosh, P., Das, D.,
+      <b>Patra, M.</b> (2025).<br>
+      <i>NEXOTRANS: A Next-Generation Exoplanet Atmospheric Retrieval Framework for
+      Emission Spectroscopy — Atmospheric Characterization of WASP-69b Using JWST NIRCam and MIRI.</i><br>
+      <b>Status:</b> Submitted to ApJ |
+      <a href="https://arxiv.org/html/2510.27223v1" target="_blank">arXiv</a>
     </li>
   </ul>
 </section>
@@ -187,22 +221,19 @@ footer{
 <section id="academy">
   <h2>Q-Physics Academy</h2>
   <p>
-    Founder of <b>Q-Physics Academy</b>, an educational platform focused on physics, astronomy,
-    and competitive exam preparation (CSIR-NET, GATE, IIT-JAM).
+    Founder of <b>Q-Physics Academy</b>, an educational initiative for physics and astronomy
+    (CSIR-NET, GATE, IIT-JAM).
   </p>
   <p>
-    ▶️ YouTube:  
-    <a href="https://www.youtube.com/@MITHUNPATRAQPhysicsAcademy" target="_blank">
-      Q-Physics Academy Channel
-    </a>
+    ▶️ <a href="https://www.youtube.com/@MITHUNPATRAQPhysicsAcademy" target="_blank">YouTube Channel</a>
   </p>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
   <p>
-    📧 Email: <a href="mailto:mithunp092@gmail.com">mithunp092@gmail.com</a><br>
-    🌐 Website: <a href="https://sites.google.com/niser.ac.in/mithun-patra/about" target="_blank">Google Site</a><br>
+    📧 <a href="mailto:mithunp092@gmail.com">mithunp092@gmail.com</a><br>
+    🌐 <a href="https://sites.google.com/niser.ac.in/mithun-patra/about" target="_blank">Google Site</a><br>
     🔗 ORCID: 0009-0002-4941-5218
   </p>
 </section>
